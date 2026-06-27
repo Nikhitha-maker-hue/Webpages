@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="style12.css">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: white;
+            display: grid;
+            grid-template-columns:   repeat(12,1fr);
+            grid-auto-rows:minmax(100px,auto);
+            row-gap: 5px;
+            column-gap: 10px;
+        }
+        .box{
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: burlywood;
+        }
+        .box1{
+            grid-column-start:1 ;
+            grid-column-end: 13;
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr;
+        }
+        .box2{
+            grid-column-start:1 ;
+            grid-column-end: 13;
+        }
+        .box3{
+            grid-column-start:1 ;
+            grid-column-end: 5;
+        }
+        .box4{
+            grid-column-start:5 ;
+            grid-column-end: 13;
+        }
+        .box5{
+            grid-column-start:1;
+            grid-column-end: 4;
+        }
+        .box6{
+            grid-column-start:4 ;
+            grid-column-end: 10;
+        }
+        .box7{
+            grid-column-start:10;
+            grid-column-end: 13;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">One</div>
+        <div class="box11">one of One</div>
+         <div class="box12">one of Two</div>
+          <div class="box13">one of Three</div>
+        <div class="box box2">Two</div>
+        <div class="box box3">Three</div>
+        <div class="box box4">Four</div>
+        <div class="box box5">Five</div>
+        <div class="box box6">Six</div>
+        <div class="box box7">Seven</div>
+    </div>
+</body>
+</html>

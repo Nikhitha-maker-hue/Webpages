@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+        .container {
+            width: 400px;
+            height: 550px;
+            background-color: whitesmoke;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 0px 0px 2cap black;
+            padding: 20px;
+            
+            box-sizing: border-box;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bolder;
+            
+        }
+        input[type="text"] {
+                width: 98%;
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+            input[type="password"] {
+                width: 98%;
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+            input[type="email"] {
+                width: 98%;
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+              input[type="submit"] {
+                width: 98%;
+                padding: 10px;
+                border: 1px solid black;
+                border-radius: 5px;
+                background-color: rgb(109, 109, 232);
+                font-weight: bolder;
+                color: white;
+                border-color: blue;
+                cursor: pointer;
+            }
+            input[type="submit"]:hover {
+                background-color: rgb(116, 89, 225);
+            }
+            .form-group {
+                margin-bottom: 20px;
+            }
+            textarea {
+                width: 98%;
+                padding: 5px;
+                box-sizing: border-box;
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+           
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="">Name</label>
+                <input type="text" name=" full name" id="full name" placeholder="enter full name">
+            </div>
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="email" name=" email" id="email" placeholder="enter email">
+            </div>
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" name="password" id="enter password" placeholder="enter password">
+            </div>
+            <div class="form-group">
+                <input type="textarea" value="address">
+            </div>
+            <div class="form-group">
+                <label for="">preferred contact methods</label>
+                <div class="checkbox-group">
+                    <label for=""><input type="radio" name="contact[]" id="sms">SMS</label>
+                     <label for=""><input type="radio" name="contact[]" id="sms">Moblie</label>
+                      <label for=""><input type="radio" name="contact[]" id="sms">email</label>
+                </div>
+                </div>
+                <div class="form.group">
+                    <label for="">Branch</label>
+                    <select name="branch" id="branch">
+                        <option value="cs">computer Science</option>
+                        <option value="ec">electronics and  com</option>
+                        <option value="mech">mechanical</option>
+                        <option value="civil">civil engineering</option>
+                    </select>
+                </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        caption{
+            font-size: 38px;
+            font-weight: bolder;
+        }
+        td,th{
+            border:1px solid black;
+            padding: 20px ;
+            text-align:center ;
+        }
+        th{
+            background-color: rgb(198,179, 189);
+        }
+        .avg th{
+            background-color: lightcoral;
+        }
+         </style>
+</head>
+<body>
+    <table>
+        <caption>Student Exam Scores</caption>
+        <thead>  
+            <tr>
+                <th>Student Name</th>
+                <th>Subject</th>
+                <th>Marks</th>      
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">John Doe</td>
+                    <td >Math</td>
+                    <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>science</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                    <td rowspan="2">John smith</td>
+                    <td >Math</td>
+                    <td>78</td>
+                    </tr>
+                    <tr>
+                        <td>science</td>
+                        <td>88</td>    
+                    </tr>             
+        </thead>
+   
+    <tfoot>
+        <tr class="avg">
+            <th colspan="3">Average marks (for all students ) </th>          
+            <th>86.26</th>
+        </tr>
+    </tfoot>
+     </tbody>
+    </table>
+</body>
+</html>

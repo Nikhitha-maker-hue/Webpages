@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Signup</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin: 100px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px #0003;
+}
+
+.container .form {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.container .form h1 {
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.container .form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container .form input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.container .form button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.container .form button:hover {
+    background: #0056b3;
+}
+
+.container .image {
+    flex: 1;
+    text-align: center;
+}
+
+.container .image img {
+    max-width: 100%;
+    height: auto;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h1>Sign up</h1>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Repeat your password" required>
+            <label>
+                <input type="checkbox" required> I agree all statements in <a href="">Terms of service</a>.
+            </label>
+            <br>
+            <button>REGISTER</button>
+        </div>
+        <div class="image">
+            <img src="signup.jpg" alt="Signup illustration">
+        </div>
+    </div>
+</body>
+</html>
